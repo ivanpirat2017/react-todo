@@ -1,0 +1,79 @@
+$color-orange: var(--color-orange);
+$color-black: var(--color-black);
+$color-red: var(--color-red);
+$color-blue: var(--color-blue);
+$color-grean : var(--color-grean);
+
+.bc-orange {
+    background-color: $color-orange;
+}
+
+.bc-black {
+    background-color: $color-black;
+}
+
+.bc-red {
+    background-color: $color-red;
+}
+
+.bc-blue {
+    background-color: $color-blue;
+}
+
+.bc-grean {
+    background-color: $color-grean;
+}
+
+
+
+
+.color-orange {
+    color: $color-orange;
+}
+
+.color-black {
+    color: $color-black;
+}
+
+.color-red {
+    color: $color-red;
+}
+
+.color-blue {
+    color: $color-blue;
+}
+
+.color-grean {
+    color: $color-grean;
+}
+
+
+
+.border-color-orange {
+    border-color: $color-orange;
+}
+
+.border-color-black {
+    border-color: $color-black;
+}
+
+.border-color-red {
+    border-color: $color-red;
+}
+
+.border-color-blue {
+    border-color: $color-blue;
+}
+
+.border-color-grean {
+    border-color: $color-grean;
+}
+
+
+.cnt {
+    padding: 50px 15%;
+
+    @media (max-width: 500px) {
+        padding: 25px 5%;
+    }
+}

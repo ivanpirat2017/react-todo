@@ -1,0 +1,106 @@
+.errrtext {
+    padding-top: 10px;
+}
+
+.backImg {
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.calendar {
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    left: 22px;
+    font-size: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+}
+
+.Tasks {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(255 255 255);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 30px;
+
+    &Plan {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+
+        div {
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        img {
+            padding: 5px;
+            height: 70px;
+        }
+    }
+
+    &Items {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.select-box {
+    select {
+        appearance: none;
+        // Additional resets for further consistency
+        background-color: transparent;
+        border: none;
+        padding: 0 1em 0 0;
+        margin: 0;
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+        outline: none;
+        width: 100%;
+
+        border-radius: 0.25em;
+        padding: 0.25em 0.5em;
+        font-size: 1.25rem;
+        cursor: pointer;
+        line-height: 1.1;
+
+    }
+
+    margin-top: 20px;
+    min-width: 15ch;
+    max-width: 25ch;
+    border-bottom: 2px solid rebeccapurple;
+    background-color: #fff;
+    position: relative;
+
+    border-radius: 5px 5px 0px 0px;
+
+    &::after {
+        content: "";
+        width: 0.8em;
+        position: absolute;
+        height: 0.5em;
+        top: 40%;
+        right: 10px;
+        background-color: black;
+        -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    }
+
+    &:-ms-expand {
+        display: none;
+    }
+}

@@ -1,0 +1,138 @@
+.d-none {
+    visibility: hidden;
+    position: absolute;
+}
+
+.Category {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    height: 100px;
+    justify-content: start;
+    gap: 25px;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: #0064741c 0 0 30px;
+    align-items: center;
+    animation-iteration-count: 1;
+    animation: transformScale 0.3s;
+
+    
+
+    &EditIput {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+
+        input,
+        button {
+            width: calc(100% - 20px);
+        }
+
+        @media (max-width: 850px) {
+            flex-direction: column;
+        }
+    }
+
+    @keyframes transformScale {
+        from {
+            transform: scale(0.1);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+
+    &Icon {
+        height: calc(100% - 30px);
+        padding: 15px;
+    }
+
+
+    &Edit {
+        position: absolute;
+        height: 20px;
+        right: 0;
+        top: 0;
+        padding: 15px;
+        cursor: pointer;
+
+        @media (max-width: 450px) {
+            position: absolute;
+            height: 15px;
+            right: 0;
+            top: 6px;
+            padding: 7px;
+            cursor: pointer;
+        }
+
+
+
+        &menu {
+            position: absolute;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px;
+
+            p {
+                width: 100%;
+                padding: 5px;
+                background: rgb(255, 255, 255);
+                font-weight: 400;
+                transition: cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s;
+
+                @media (max-width: 500px) {
+                    font-size: 1rem;
+                    padding: 10px 5px;
+                }
+
+                &:nth-child(1) {
+
+
+
+                    color: rgb(255, 255, 255);
+                    background: #444444;
+
+                    &:hover {
+
+                        color: rgb(66, 55, 55);
+                        background: #ffffff;
+                    }
+                }
+
+                &:nth-child(2) {
+                    color: rgb(0, 0, 0);
+                    background: #ececec;
+
+                    &:hover {
+
+                        color: white;
+                        background: #205cc9;
+                    }
+                }
+
+                &:nth-child(3) {
+
+                    color: rgb(0, 0, 0);
+                    background: #ececec;
+
+                    &:hover {
+                        color: white;
+                        background: #f33333;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+    }
+}

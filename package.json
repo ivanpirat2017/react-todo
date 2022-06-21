@@ -1,0 +1,50 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.17.12",
+        "@babel/preset-typescript": "^7.17.12",
+        "@popperjs/core": "^2.10.2",
+        "axios": "^0.25",
+        "bootstrap": "^5.1.3",
+        "browser-sync": "^2.27.10",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.32.11",
+        "sass-loader": "^11.1.1",
+        "ts-loader": "^9.3.0"
+    },
+    "dependencies": {
+        "@craco/craco": "^5.9.0",
+        "@reduxjs/toolkit": "^1.8.2",
+        "@types/jest": "^28.1.1",
+        "@types/node": "^17.0.41",
+        "@types/react": "^18.0.12",
+        "@types/react-dom": "^18.0.5",
+        "@types/react-redux": "^7.1.24",
+        "babel-plugin-react-scoped-css": "^1.1.1",
+        "craco-plugin-scoped-css": "^1.1.1",
+        "css-loader": "^6.7.1",
+        "react-redux": "^8.0.2",
+        "react-router-dom": "^6.3.0",
+        "react-scoped-styles": "^0.5.6",
+        "redux-thunk": "^2.4.1",
+        "scoped-css-loader": "^1.0.0",
+        "scss-loader": "^0.0.1",
+        "style-loader": "^3.3.1",
+        "typescript": "^4.7.3"
+    }
+}

@@ -1,0 +1,10 @@
+
+.AppUser {
+        &Text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7px;
+            height: 100%;
+        }
+}

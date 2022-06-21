@@ -1,0 +1,35 @@
+ .Сategories {
+
+     display: flex;
+     flex-direction: column;
+     padding-top: 30px;
+     position: relative;
+
+     &_AddPlan {
+         position: fixed;
+         padding: 30px;
+         height: 60px;
+         z-index: 2;
+         right: 0;
+         bottom: 0;
+         cursor: pointer;
+
+         @media (max-width: 600px) {
+             position: fixed;
+             padding: 15px;
+             height: 50px;
+             z-index: 2;
+             right: 0;
+             bottom: 0;
+         }
+
+
+     }
+
+     &Items {
+         display: flex;
+         flex-direction: column;
+         padding-top: 10px;
+         gap: 15px;
+     }
+ }
